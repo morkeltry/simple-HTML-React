@@ -1,0 +1,158 @@
+
+.logo {
+  grid-area: header;
+  width: 100%;
+  padding: 3vw 4.75vw 0 4.75vw;
+  box-sizing: border-box;
+}
+
+.logo__inner {
+}
+
+
+.main {
+  background: #0E0E0E;
+  display: grid;
+  width: 100%;
+  grid-gap: 2.5vw;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 23.75% 47.5%;
+  grid-area: header space
+             space  main;
+
+  font-family: "FFNettoWebPro";
+  font-size: 2.25vw;
+}
+
+/* NB- .main h1 will be overriden by .form-find-quote h1 , which is particular to this exact text */
+.main h1  {
+  padding: 5vh 2.5vw;
+  font-family: "FFNettoWebPro";
+  font-size: 4.25vw;
+  line-height: 1.6;
+  color: #424242;
+}
+
+
+.form-find-quote {
+  height: auto;
+  width: 47.5vw;
+  padding: 5vh 2.5vw;
+  box-sizing: border-box;
+  color: #9B9B9B;
+}
+
+.form-find-quote h1  {
+  padding: 0 0.2vw;
+  margin: 5vh 0.2vw;
+  color: #424242;
+  font-size : 4.4vw;
+}
+
+.form-find-quote__inner {
+  height: 100vh;
+}
+
+.form-find-quote form {
+  padding: 2.5vw 0 2.5vw 0;
+}
+
+.form-find-quote h2 {
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #888888;
+}
+
+
+::selection {
+  background: #F88800;
+  color: #444444;
+}
+
+::-moz-selection {
+  background: #F88800;
+  color: #444444;
+}
+
+
+.form-find-quote form input[type="submit"]  {
+  width : 100%;
+  padding : 3vw;
+  margin : 2.5vw 0;
+  border: none;
+  font-family: "FFNettoWebProBold";
+  font-size: 2.5vw;
+  background-color: #272727;
+  color: #F88800;
+  outline: none;
+}
+
+.date-row {
+  display : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  padding: 2.5vw 0;
+  margin : 0;
+}
+
+.date-row input {
+  background: transparent;
+  width: 100%;
+  padding: 0.2vw 0;
+  font-family: "FFNettoWebPro";
+  font-size: 4.5vw;
+  font-weight: 300;
+  color: #888888;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #F88800;
+}
+
+::placeholder {
+  color: #444444;
+  opacity: 1; /* Firefox */
+}
+
+.date-row input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 0.4vw solid #F88800;
+}
+
+.date-row label {
+  display: block;
+  padding: 0.6vw 0.2vw;
+  font-size: 2vw;
+}
+
+/* parent form useable width ~=89% after box-sizing */
+.date-row__DD {
+  width: 23%;
+}
+
+.date-row__MM {
+  padding: 0 4%;
+  width: 23%;
+}
+
+.date-row__YYYY {
+  width: 46%;
+}
+
+/* I don't have a more specific font-weight available */
+.heavy-text {
+  font-family: "FFNettoWebProBold";
+}
+
+.small-text {
+  font-size: 2vw;
+  line-height: 1.25;
+}
+
+.highlight-text {
+  color : #F88800;
+}
+
+.large-margin-text {
+  margin : 6vw 0;
+}
